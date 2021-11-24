@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="navbar">
+    
+    <div class="navbar-esquerdo">
+        <div class="logo">
+            <span>Painel de Usuarios</span>
+        </div>
+
+        
+
+    </div>
+
+<div class="navbar-direito">
+<button>
+<img src="images/pushmenu.png" class="button">
+</button>
+<div class="user">
+
+    <img class="user-t" src="images/user.jpg">
+
+    <h3 class="name">
+        Fernando Henrique
+    </h3>
+    
+</div>
+
+
+
+
+
+    
+    
+</div>
+</div>
+
+<div class="container">
+    
+    
+    <div class="lateral-esquerdo">
+        <div class="usuario">
+            <img class="user-r" src="images/user.jpg">
+    
+        <h3 class="name-r">
+            Fernando Henrique
+            <br>
+            <span class="online">
+                <div class="bolinha"></div> 
+                online</span>
+        </h3>
+        </div>
+    
+        <div class="menu">
+            <p>Menu</p>
+        </div>
+    
+        <div class="Options">
+            <div class="barra-lateral"></div>
+            <img class="masc" src="images/profile.png">
+            <button>Usuarios</button>
+        </div>
+    </div>   
+
+    <div class="container-central">
+        <div class="table-r">
+            <div class="para"><p><h2>Usuarios</h2><h5>Gerenciamento de Usuarios do Sistema</h5></p></div>
+            <table class="table">
+                
+                <thead>
+                    <tr>
+                        <td>Foto</td>
+                        <td>Nome</td>
+                        <td>Email</td>
+                        <td>Admin</td>
+                        <td>Criado em</td>
+                        <td>Ações</td>
+                    </tr>
+                </thead>
+                
+                <tr>
+                    <td><img src="images/profile.png"></td>
+                    <td>Fernando</td>
+                    <td>cara-se@hotmail.com</td>
+                    <td>Sim</td>
+                    <td>17/07/2020</td>
+                    <td><button class="azul">Editar</button><button class="vermelho">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td><img src="images/profile.png"></td>
+                    <td>Fernando</td>
+                    <td>cara-se@hotmail.com</td>
+                    <td>Sim</td>
+                    <td>17/07/2020</td>
+                    <td><button class="azul" >Editar</button><button class="vermelho">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td><img src="images/profile.png"></td>
+                    <td>Fernando</td>
+                    <td>cara-se@hotmail.com</td>
+                    <td>Sim</td>
+                    <td>17/07/2020</td>
+                    <td><button class="azul">Editar</button><button class="vermelho">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td><img src="images/profile.png"></td>
+                    <td>Fernando</td>
+                    <td>cara-se@hotmail.com</td>
+                    <td>Sim</td>
+                    <td>17/07/2020</td>
+                    <td><button class="azul">Editar</button><button class="vermelho">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td><img src="images/profile.png"></td>
+                    <td>Fernando</td>
+                    <td>cara-se@hotmail.com</td>
+                    <td>Sim</td>
+                    <td>17/07/2020</td>
+                    <td><button class="azul">Editar</button><button class="vermelho">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td><img src="images/profile.png"></td>
+                    <td>Fernando</td>
+                    <td>cara-se@hotmail.com</td>
+                    <td>Sim</td>
+                    <td>17/07/2020</td>
+                    <td><button class="azul">Editar</button><button class="vermelho">Excluir</button></td>
+                </tr>
+            
+          </table>  
+        </div>  
+        <div class="container-direito">
+
+            <div class="contadores">
+                <div class="novosuser"><p>Novos Usuarios:<span> 15</span></p></div>
+                <div class="administradores"><p>Administradores: <span>3</span></p></div>
+            </div>
+          
+            <form id="form-user-create">
+                <div class="linha"></div>
+                <p class="newuser"> Cadastrar Novo Usuario</p>
+                <div class="linha"></div>
+                <label for="fname">Nome:</label>
+                <br>
+                <input class="inputtext" type="text" id="nomeform" placeholder="Digite o nome de Usuario" name="nameuser">
+                <br>
+
+                <label for="fname">Genero:</label>
+                <br>
+                
+                <input class="radio" type="radio" placeholder="Homem" name="gender" id="genderH" checked>
+                <label for="fname">Homem</label>
+                <input class="radio" type="radio" placeholder="Homem" name="gender" id="genderM"> 
+                <label for="fname">Mulher</label>
+                <br>
+                <label for="fname">Data de Nascimento</label>
+                <br>
+                <input type="date" id="dateform">
+                <br>
+                
+
+                <label for="cars">Nacionalidade:</label>
+                <br>
+  <select id="Nacionalidade" name="Options">
+    <option value="Brasil">Brasil</option>
+    <option value="eua">EUA</option>
+    
+  </select>
+  <br>
+  <label for="email">Email:</label>
+  <br>
+
+  <input class="email" type="email" placeholder="Digite seu email..." id="emailform" name="formemail">
+  <br>
+  <label for="email">Senha:</label>
+  <br>
+
+  <input class="email" type="password" placeholder="Digite sua senha..." id="senhaform" name="formsenha">
+  <br>
+  <br>
+  <label for="file">Foto:</label>
+  <br>
+  <input type="file" id="arquivo" name="formfoto">
+  <br>
+  <br>
+  <input class="submit" type="submit">
+ 
+ 
+                
+
+            </form>
+
+
+        </div>
+
+        
+
+
+
+    </div>
+    <div class="footer"> 
+            
+    </div>
+    <script src="script.js">
+
+    </script>
+</div>
+</html>
